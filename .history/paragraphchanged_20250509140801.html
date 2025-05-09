@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph Changed</title>
+    <!-- external javascript  -->
+    <script src="introduct.js"></script>
+    <!-- internal javascript  -->
+    <script>
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "Paragraph changed";
+        }
+    </script>
+</head>
+<body>
+    <h2>Demo JavaScript in Head!</h2>
+    <p id="demo">A Paragraph.</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <!-- external javascript  -->
+    <p id="demo1">Hello!</p>
+    <button type="button" onclick="myFunctionChange()">Try it</button>
+
+    <!-- javascript display possibilities  -->
+
+    <!-- writing into an HTML element, using innerHTML or innerText.  -->
+
+    <p id="tag"></p>
+    <p id="tag1"></p>
+    <button type="button" onclick="document.write(5+8)">Try it</button>
+
+    <script>
+        document.getElementById("tag").innerHTML = "<h2>Hello world!</h2>"
+        document.getElementById("tag1").innerText = "Hello world!"
+        document.write(5+6);
+
+        // using window.alert()
+        window.alert(5+8)
+    </script>
+</body>
+</html>
